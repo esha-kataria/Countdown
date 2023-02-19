@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- section start -->
+    <section>
+        <div id="display">
+            <div class="padding" id = "time" onload="countDown()"></div>
+
+            <ul class="ul" >
+                <li>
+                    <p class="box m-left1">Days</p>
+                </li>
+                <li>
+                    <p class="box m-left">Hours</p>
+                </li>
+                <li>
+                    <p class="box m-left">Minutes</p>
+                </li>
+                <li>
+                    <p class="box m-left">Seconds</p>
+                </li>
+            </ul>
+        </div>
+        <p id="show"></p>
+            <div class="clear"></div>
+    </section>
+    <!-- section closed -->
+
+    <!-- <script>
+                function countDown() {
+            let deadline = new Date("jan 01, 2023 12:00:00");
+            let now = new Date(); 
+            let time = deadline-now;
+            // let nowNEW = new Date(time); 
+            // let hh = nowNEW.getHours();
+            // let mm = nowNEW.getMinutes();
+            // let ss = nowNEW.getSeconds();
+            let seconds = Math.floor( (time/1000) % 60 );
+            let minutes = Math.floor( (time/1000/60) % 60 );
+            let hours = Math.floor( (time/(1000*60*60)) % 24 );
+            let days = Math.floor( time/(1000*60*60*24) );
+
+            seconds = seconds < 10 ? '0'+seconds : seconds;
+            minutes = minutes < 10 ? '0'+minutes : minutes;
+            hours = hours < 10 ? '0'+hours : hours;
+            days = days < 10 ? '0'+days : days;
+
+
+            let time1 = days + "  " + hours + "  " + minutes + "  " + seconds;
+
+ 
+            document.getElementById("time").innerHTML = time1;  
+
+            if(time <0){
+                document.getElementById("display").style.display="none";
+                document.getElementById("show").innerHTML="HAPPY NEW YEAR";
+            }
+
+}
+
+setInterval('countDown()', 1000);
+    </script> -->
+    <script src="js/style.js"></script>
+</body>
+</html>

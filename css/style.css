@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    color: yellowgreen;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 200px;
+}
+
+.padding{
+    word-spacing: 160px;
+}
+
+section{
+    width: 1170px;
+    margin: auto;
+}
+ul li{
+    display: inline ;
+}
+
+.ul{
+    margin-top: 0;
+}
+
+.box{
+    width: 10%;
+    float: left;
+    border-radius: 30px 15px;
+    border: 2px solid white;
+    padding: 10px 10px;
+}
+
+.m-left{
+    margin-left: 60px;
+}
+
+.m-left1{
+    margin-left: 190px;
+}
+
+.clear{
+    clear: both;
+}
+
